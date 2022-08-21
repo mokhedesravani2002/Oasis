@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Landing page design using html and css in hindi</title>
+<style type="text/css">
+		*{padding:0; margin:0; box-sizing: border-box; font-family: sans-serif;
+		}
+		header{
+			width: 100%;
+			height: 100vh;
+			background: url(images/pizza.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+		nav{
+			width:100%;
+			height: 70px;
+			padding: 0px 70px;
+			background: white;
+			color: brown;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			box-shadow: 2px 0px 5px grey;
+		}
+		.logo{
+			font-weight: bold;
+			font-size: 3em;
+			letter-spacing: 2px;
+
+		}
+		.logo span{
+			color: brown;
+		}
+		.menu a{
+			text-decoration: none;
+			color: rgb(230, 26, 26);
+			padding: 10px 20px;
+		}
+		.menu a:last-child{
+			background: brown;
+			color: azure;
+			border-radius: 8px;
+		}
+		.h-text{
+			position: absolute;
+			top: 20%;
+			left: 5%;
+			padding: 15px;
+		}
+		.h-text p{
+			color: cadetblue;
+			letter-spacing: 3px;
+			font-weight: bold;
+			font-size: 2em;
+		}
+		.h-text h1{
+			color: rgb(229, 250, 250);
+			font-size: 4em;
+			line-height: 1.5em;
+		}
+		.h-text h1 span{
+				color: cadetblue;
+		}
+		.h-text h2{
+			color: rgb(229, 250, 250);
+			font-size: 4em;
+			margin-bottom: 0.5em;
+		}
+		.h-text h2 span{
+			color: cadetblue;
+
+		}
+		
+		#order{
+			text-decoration: none;
+			color: rgb(223, 213, 162);
+			background: rgb(183, 66, 170);
+			border-radius: 8px;
+			padding: 10px 20px;
+		}
+		#dis{
+			text-decoration: none;
+			color: rgb(178, 103, 103);
+			background: #e8c5c5;
+			padding: 10px 20px;
+			border-radius: 8px;
+		}
+		#pizza{
+			position: absolute;
+			bottom: 15%;
+			left: 5%;
+		}
+		#pizza img{
+			transition: 0.4s ease;
+		}
+		#pizza img:hover{
+			transform: translateY(-20px);
+		}
+		
+</style>
+</head>
+<body>
+<header>
+	<nav>
+		<div class="logo"><span>Pizzahat</span></div>
+		<div class="menu">
+				<a href="#" id="home">Home</a>
+			<a href="#" id="food">Food</a>
+			<a href="#" id="offer">Offer's</a>
+			<a href="#" id="ur">Your Order</a>
+			<a href="#" id="delivery">Delivery</a>
+			<a href="#" id="cart">Cart</a>
+		</div>
+	</nav>
+	<div class="h-text">
+			<p>Free Home Delivery</p>
+		<h1>Quality F<span>oo</span>ds </h1>
+		<h2>Pi<span>zz</span>a hat of the Week</h2>
+		<a href="#" id="order">Order now!!</a>
+		<a href="#" id="dis">25% Off Hurry!!</a>
+	</div>
+	
+</header>
+</body>
+</html>
